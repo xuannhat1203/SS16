@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function laKyTuSo(kyTu) {
+            return !isNaN(kyTu);
+        }
+        let kyTuNhapVao = prompt("Nhap 1 ki tu");
+        let ketQua = laKyTuSo(kyTuNhapVao);
+        if (ketQua) {
+            console.log(`Ký tự ${kyTuNhapVao}là số.`);
+        } else {
+            console.log(`Ký tự ${kyTuNhapVao} không phải là số.`);
+        }
+    </script>
+</body>
+
+</html>

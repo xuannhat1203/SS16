@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function doiChoHaiSoNguyen(a, b) {
+            var temp = a;
+            a = b;
+            b = temp;
+            return [a, b];
+        }
+        var so1 = 10;
+        var so2 = 5;
+        console.log("Trước khi đổi chỗ: so1 =", so1, "và so2 =", so2);
+        var ketQua = doiChoHaiSoNguyen(so1, so2);
+        so1 = ketQua[0];
+        so2 = ketQua[1];
+        console.log("Sau khi đổi chỗ: so1 =", so1, "và so2 =", so2);
+    </script>
+</body>
+</html>

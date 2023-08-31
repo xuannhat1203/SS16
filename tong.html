@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    /*    let a=+prompt("nhap so thu nhat");
+      let b = +prompt("nhap so thu nhat");
+      let ketQua=0;
+      function tongHaiSo(a1,b1) {
+        ketQua=a1+b1;
+        console.log(ketQua);
+      }tongHaiSo(a,b)  */
+     let num=+prompt("nhap 1 so tuy y ");
+    let check = true;
+    function kiemTra(params) {
+        if (num<2){
+            console.log("day khong phai la so nguyen to");
+        }else {
+            for (let i=2;i<=num; i++){
+                if (num%i==0){
+                    console.log("khong phai so nguyen to");
+                    check=false;
+                    break;
+                }
+                if (check){
+                    console.log("day la so nguyen to");
+                }
+            }
+        }
+        
+    }kiemTra(num) 
+    /* let num=+prompt("nhap 1 so");
+    let so = 0;
+    function kiemTra(params) {
+        for(let i=1; i<params;i++){
+            if( params%i===0){
+                so+=i;
+            }
+            if (so==params){
+                console.log("day la so hoan hao");
+
+            }else {
+                console.log("khong la so hoan hao");
+            }
+        }
+    }let ketQua =kiemTra(num)
+  */
+
+    </script>
+</body>
+
+</html>

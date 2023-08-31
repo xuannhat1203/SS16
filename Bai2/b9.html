@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countCharacter(array, character) {
+                let count = 0;
+                for (let i = 0; i < array.length; i++) {
+                    if (array[i] === character) {
+                        count++;
+                    }
+                }
+                if (count > 0) {
+                    return count;
+                } else {
+                    return -1;
+                }
+            }
+            let  inputArray = ['a', 'b', 'c', 'a', 'd', 'e'];
+            let inputCharacter =prompt("nhap 1 ki tu bat ki");
+            let result = countCharacter(inputArray, inputCharacter);
+            if (result > 0) {
+                console.log(`Ký tự "${inputCharacter}" xuất hiện ${result} lần.`);
+            } else {
+                console.log(`Ký tự "${inputCharacter}" không xuất hiện trong mảng.`);
+            }
+    </script>
+</body>
+</html>
